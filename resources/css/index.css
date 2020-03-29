@@ -41,7 +41,7 @@ h2 {
 	/* Other CSS */
 	margin: auto;
 	max-width: 1000px;
-	padding: 4rem;
+	padding: 2rem;
 	text-align: center;
 }
 
@@ -105,6 +105,11 @@ h2 {
 
 .navbar li a:hover {
 	color: var(--lighter-txt-color);
+	font-weight: 600;
+}
+
+.title h1 {
+	font-size: 4rem;
 }
 
 /* About Section & Specific Tags */
@@ -125,9 +130,13 @@ h2 {
 .contact {
 	justify-content: space-evenly;
 }
+
+.contact img {
+	width: 40px;
+}
+
 .contact a {
 	color: inherit;
-	font-size: 2rem;
 }
 
 .contact a:hover {
@@ -138,4 +147,8 @@ h2 {
 .footer {
 	padding-bottom: 0.5rem;
 	font-size: 0.8rem;
+}
+
+.footer > div > a {
+	text-decoration: none;
 }
