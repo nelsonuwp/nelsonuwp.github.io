@@ -1,0 +1,141 @@
+/* Main Variable Declarations */
+:root {
+	/* Background Colors */
+	--main-bg: white;
+	--dark-bg: black;
+	--icon-bg: rgba(192, 192, 192, 0.685);
+
+	/* Font Colors */
+	--light-txt-color: #ececec;
+	--lighter-txt-color: white;
+	--dark-txt-color: rgb(68, 68, 68);
+	--darker-txt-color: black;
+
+	/* Fonts */
+	--main-font: "Montserrat", sans-serif;
+
+	--icon-size: 100px;
+}
+
+/* Standard Tags*/
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--main-bg);
+	font-family: var(--main-font);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-size: 1rem;
+	color: var(--darker-txt-color);
+}
+
+h2 {
+	color: var(--dark-txt-color);
+}
+
+/* Shared Div Tags */
+.section {
+	/* Other CSS */
+	margin: auto;
+	max-width: 1000px;
+	padding: 4rem;
+	text-align: center;
+}
+
+.container {
+	/* Flex CSS */
+	display: block;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem 0;
+}
+
+.flex {
+	/* Flex CSS */
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.mt-2 {
+	margin-top: 4rem;
+}
+
+.dark {
+	background-color: var(--dark-bg);
+}
+
+/* Intro Section & Specific Tags */
+.top {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--light-txt-color);
+	min-height: 62vh;
+	max-width: 100%;
+}
+
+.navbar {
+	top: 0;
+	position: absolute;
+	right: 0;
+}
+
+.navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.navbar li {
+	float: right;
+}
+
+.navbar li a {
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	color: var(--light-txt-color);
+}
+
+.navbar li a:hover {
+	color: var(--lighter-txt-color);
+}
+
+/* About Section & Specific Tags */
+.icon {
+	width: 38%;
+}
+
+.icon img {
+	width: var(--icon-size);
+}
+
+.details {
+	width: 62%;
+	min-width: 360px;
+}
+
+/* Contact Section & Specific Tags */
+.contact {
+	justify-content: space-evenly;
+}
+.contact a {
+	color: inherit;
+	font-size: 2rem;
+}
+
+.contact a:hover {
+	transform: scale(1.5);
+	/* text-shadow: var(--text-hover); */
+}
+
+.footer {
+	padding-bottom: 0.5rem;
+	font-size: 0.8rem;
+}
