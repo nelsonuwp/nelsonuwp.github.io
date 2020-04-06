@@ -47,7 +47,6 @@ blockquote {
 	border-style: solid;
 	border-color: #eee;*/
 	padding: 1.5em 0 0.5em;
-	max-width: 480px;
 	margin: 2rem auto;
 	position: relative;
 }
@@ -68,6 +67,12 @@ blockquote:after {
 	display: block;
 	text-align: right;
 	font-size: 0.875rem;
+	padding-top: 0.6rem;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
 }
 
 /* Shared Div Tags */
@@ -141,7 +146,6 @@ blockquote:after {
 	display: block;
 	text-align: center;
 	padding: 14px 16px;
-	text-decoration: none;
 	color: var(--light-txt-color);
 }
 
@@ -184,7 +188,6 @@ blockquote:after {
 }
 
 .contact a {
-	color: inherit;
 	transition: all 0.2s ease-in-out;
 }
 
@@ -195,8 +198,4 @@ blockquote:after {
 .footer {
 	padding-bottom: 0.5rem;
 	font-size: 0.8rem;
-}
-
-.footer > div > a {
-	text-decoration: none;
 }
