@@ -163,6 +163,8 @@ a {
 
 .title h1 {
 	font-size: 4rem;
+	position: relative;
+	z-index: 999;
 }
 
 /* About Section & Specific Tags */
