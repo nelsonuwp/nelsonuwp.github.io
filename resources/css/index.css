@@ -112,8 +112,7 @@ a {
 	padding: 1rem;
 }
 
-.emergency h2,
-p {
+.emergency h2 {
 	margin: 0;
 }
 
@@ -157,7 +156,7 @@ p {
 	align-items: center;
 	justify-content: center;
 	color: var(--light-txt-color);
-	min-height: 52vh;
+	min-height: 52vh; /*Change back to 62 once emergency is done*/
 	max-width: 100%;
 }
 
