@@ -33,6 +33,11 @@ body {
 }
 
 h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
 	color: var(--dark-txt-color);
 }
 
@@ -66,6 +71,14 @@ blockquote:after {
 }
 
 /* Shared Div Tags */
+.emergency {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 4rem;
+	background-color: red;
+}
+
 .section {
 	/* Other CSS */
 	margin: auto;
