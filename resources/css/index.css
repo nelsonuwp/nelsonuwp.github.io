@@ -32,6 +32,36 @@ body {
 	color: var(--darker-txt-color);
 }
 
+nav {
+	top: 0;
+	right: 0;
+	background-color: var(--dark-bg);
+	width: 100%;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav li {
+	float: right;
+}
+
+nav li a {
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	color: var(--light-txt-color);
+}
+
+nav li a:hover {
+	color: var(--lighter-txt-color);
+	font-weight: 600;
+}
+
 h2 {
 	font-size: 2rem;
 }
@@ -81,6 +111,11 @@ a {
 	color: var(--light-txt-color);
 }
 
+.emergency h2,
+p {
+	margin: 0;
+}
+
 .section {
 	/* Other CSS */
 	margin: auto;
@@ -121,37 +156,8 @@ a {
 	align-items: center;
 	justify-content: center;
 	color: var(--light-txt-color);
-	min-height: 62vh;
+	min-height: 52vh;
 	max-width: 100%;
-}
-
-.navbar {
-	top: 0;
-	position: absolute;
-	right: 0;
-}
-
-.navbar ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-}
-
-.navbar li {
-	float: right;
-}
-
-.navbar li a {
-	display: block;
-	text-align: center;
-	padding: 14px 16px;
-	color: var(--light-txt-color);
-}
-
-.navbar li a:hover {
-	color: var(--lighter-txt-color);
-	font-weight: 600;
 }
 
 .title h1 {
