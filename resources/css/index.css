@@ -109,6 +109,7 @@ a {
 	background-color: red;
 	text-align: center;
 	color: var(--light-txt-color);
+	padding: 1rem;
 }
 
 .emergency h2,
