@@ -208,13 +208,3 @@ a {
 	padding-bottom: 0.5rem;
 	font-size: 0.8rem;
 }
-
-/* Stupid Bouncy Logo */
-.marquee {
-	left: 0;
-	position: absolute;
-	top: 0;
-}
-.logo {
-	fill: #fff;
-}
