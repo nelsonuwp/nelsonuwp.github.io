@@ -119,10 +119,6 @@ a {
 	background-color: var(--bg-dark);
 }
 
-.bg-light {
-	background-color: var(--bg-light);
-}
-
 .bg-red {
 	background-color: var(--bg-red);
 }
