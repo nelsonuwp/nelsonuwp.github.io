@@ -31,84 +31,75 @@
 		<title>Adam Nelson - Engineer / Product Developer / Leader</title>
 	</head>
 	<body>
-		<nav>
-			<ul>
-				<li>
-					<a
-						target="_blank"
-						rel="noopener noreferrer"
-						href="resources/resume/Adam Nelson - Resume.pdf"
-					>
-						Resume
-					</a>
-				</li>
-				<!-- <li><a target="_blank" rel="noopener noreferrer" href="#">Projects</a></li> -->
-				<li>
-					<a href="#about">About</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="emergency">
-			<h2>Important COVID-19 Notice</h2>
-			<p style="font-weight: 400;">
-				If you or anyone you know are in the Greater Montreal Area and
-				need 3D printed supplies such as masks (or any other supplies
-				that can fit on a 120mm x 120mm x 120mm build plate), please
-				<a href="#contactme" style="font-weight: 600;">contact me</a>.
-			</p>
-		</div>
-		<div class="section top dark">
-			<div class="container title">
+		<header class="bg-dark txt-light">
+			<nav>
+				<a href="#about">About</a>
+				<a
+					target="_blank"
+					rel="noopener noreferrer"
+					href="resources/resume/Adam Nelson - Resume.pdf"
+				>
+					Resume
+				</a>
+			</nav>
+			<section class="bg-red full-width p-0">
+				<h2 class="m-0">Important COVID-19 Notice</h2>
+				<p>
+					If you or anyone you know are in the Greater Montreal Area
+					and need 3D printed supplies such as masks (or any other
+					supplies that can fit on a 120mm x 120mm x 120mm build
+					plate), please
+					<a href="#contactme" class="bold">contact me</a>.
+				</p>
+			</section>
+			<section class="top full-width">
 				<img
 					src="resources/images/portrait.svg"
 					alt=""
-					style="width: 240px;"
-					class="animated bounceInDown"
+					class="animated bounceInDown img-portrait"
 				/>
-				<h1>Hi, I'm Adam</h1>
-			</div>
-		</div>
 
-		<div class="section" id="about">
-			<div class="container">
+				<h1>Hi, I'm Adam</h1>
+			</section>
+		</header>
+		<main>
+			<section id="about" class="mt-4">
 				<img
-					src="resources/images/fire.svg"
+					src="resources/images/spotlight.svg"
 					alt=""
-					style="width: 120px;"
+					class="img-about"
 				/>
 				<h2>About Me</h2>
-				<div class="container mt-4">
-					<p>
-						I'm an engineer, product developer, and leader,
-						currently based in Montreal, QC &#x1F341;, on a mission
-						to make the world a better place by building teams to
-						develop revolutionary products that solve real-world
-						problems.
-					</p>
-					<p>
-						Organizations are increasingly being asked to "do more
-						with less" to stay competitive in today's market.
-						Building agile teams that can quickly respond to
-						changing market needs is crucial to developing products
-						that delight customers.
-					</p>
-					<p>
-						Outside of the office, I enjoy playing sports like
-						hockey &#x1F3D2; and golf &#x26F3;, along with other
-						activities that get me out of the house, such as running
-						&#x1F3C3;, biking &#x1F6B4;, and the occasional pint
-						with friends &#x1F37B;.
-					</p>
-				</div>
-			</div>
-		</div>
 
-		<div class="section">
-			<div class="container">
+				<p>
+					I'm an engineer, product developer, and leader, currently
+					based in Montreal, QC &#x1F341;, on a mission to make the
+					world a better place by building teams to develop
+					revolutionary products that solve real-world problems.
+				</p>
+				<p>
+					Organizations are increasingly being asked to "do more with
+					less" to stay competitive in today's market. Building agile
+					teams that can quickly respond to changing market needs is
+					crucial to developing products that delight customers.
+				</p>
+				<p>
+					Outside of the office, I enjoy playing sports like hockey
+					&#x1F3D2; and golf &#x26F3;, along with other activities
+					that get me out of the house, such as running &#x1F3C3;,
+					biking &#x1F6B4;, and the occasional pint with friends
+					&#x1F37B;.
+				</p>
+			</section>
+			<section id="whatIDo">
 				<h2>What I do</h2>
-				<div class="container flex mt-4">
+				<section class="flex">
 					<div class="icon">
-						<img src="resources/images/collaboration.svg" alt="" />
+						<img
+							src="resources/images/collaboration.svg"
+							alt=""
+							class="img-std"
+						/>
 					</div>
 					<div class="details">
 						<h3>Build Teams</h3>
@@ -127,14 +118,14 @@
 							for the right ones.
 						</blockquote>
 					</div>
-				</div>
-
-				<div
-					class="container flex mt-2"
-					style="flex-direction: row-reverse;"
-				>
+				</section>
+				<section class="flex reverse">
 					<div class="icon">
-						<img src="resources/images/plane.svg" alt="" />
+						<img
+							src="resources/images/plane.svg"
+							alt=""
+							class="img-std"
+						/>
 					</div>
 					<div class="details">
 						<h3>Develop Products</h3>
@@ -155,11 +146,14 @@
 							is timeless.
 						</blockquote>
 					</div>
-				</div>
-
-				<div class="container flex mt-2">
+				</section>
+				<section class="flex">
 					<div class="icon">
-						<img src="resources/images/browser.svg" alt="" />
+						<img
+							src="resources/images/browser.svg"
+							alt=""
+							class="img-std"
+						/>
 					</div>
 					<div class="details">
 						<h3>Solve Problems</h3>
@@ -173,86 +167,94 @@
 							Make things as simple as possible, but no simpler.
 						</blockquote>
 					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="section resume">
-			<div class="container flex">
+				</section>
+			</section>
+			<section id="resume">
 				<h2>Resume / CV</h2>
-			</div>
-			<div
-				class="container flex mt-4"
-				style="flex-direction: row-reverse;"
-			>
-				<div class="icon">
-					<a
-						target="_blank"
-						rel="noopener noreferrer"
-						href="resources/resume/Adam Nelson - Resume.pdf"
-						><img
-							src="resources/images/Adam Nelson - Resume (Blue).svg"
-							class="animated pulse infinite slower"
-							alt=""
-					/></a>
-				</div>
-				<div class="details">
-					<p>
-						For more information, you can download my resume by
-						clicking the icon. You can also use one of the links
-						below to contact me.
-					</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="section" id="contactme">
-			<div class="container">
+				<section class="flex reverse">
+					<div class="icon">
+						<a
+							target="_blank"
+							rel="noopener noreferrer"
+							href="resources/resume/Adam Nelson - Resume.pdf"
+						>
+							<img
+								src="resources/images/Adam Nelson - Resume (Blue).svg"
+								class="animated pulse infinite slower img-std img-border"
+								alt=""
+							/>
+						</a>
+					</div>
+					<div class="details">
+						<p>
+							For more information, you can download my resume by
+							clicking the icon. You can also use one of the links
+							below to contact me.
+						</p>
+					</div>
+				</section>
+			</section>
+			<section id="contactme">
 				<h2>Contact Me</h2>
-				<div class="container flex contact mt-4">
+				<section class="flex contact">
 					<a
 						target="_blank"
 						rel="noopener noreferrer"
 						href="mailto:adam@adamcnelson.com"
 					>
-						<img src="resources/images/mail.svg" alt="" />
+						<img
+							src="resources/images/mail.svg"
+							alt=""
+							class="img-contact"
+						/>
 					</a>
 					<a
 						target="_blank"
 						rel="noopener noreferrer"
 						href="https://www.linkedin.com/in/A-C-Nelson/"
 					>
-						<img src="resources/images/linkedin.svg" alt="" />
+						<img
+							src="resources/images/linkedin.svg"
+							alt=""
+							class="img-contact"
+						/>
 					</a>
 					<a
 						target="_blank"
 						rel="noopener noreferrer"
 						href="https://www.github.com/nelsonuwp/"
 					>
-						<img src="resources/images/github.svg" alt="" />
+						<img
+							src="resources/images/github.svg"
+							alt=""
+							class="img-contact"
+						/>
 					</a>
-				</div>
-			</div>
-		</div>
-
-		<div class="section footer">
-			Created by Adam Nelson / 2020
-			<div>
+				</section>
+			</section>
+		</main>
+		<footer>
+			<p>
+				Created by Adam Nelson / 2020
+			</p>
+			<p>
 				Icons made by
 				<a
 					href="https://www.flaticon.com/authors/freepik"
 					title="Freepik"
-					>Freepik</a
 				>
+					Freepik
+				</a>
 				from
 				<a
 					target="_blank"
 					rel="noopener noreferrer"
 					href="https://www.flaticon.com/"
 					title="Flaticon"
-					>www.flaticon.com</a
 				>
-			</div>
-		</div>
+					www.flaticon.com
+				</a>
+			</p>
+		</footer>
 	</body>
 </html>

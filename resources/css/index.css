@@ -3,20 +3,24 @@
 /* Main Variable Declarations */
 :root {
 	/* Background Colors */
-	--main-bg: white;
-	--dark-bg: #151515;
-	--icon-bg: rgba(192, 192, 192, 0.685);
+	--bg-light: ffffff;
+	--bg-dark: #151515;
+	--bg-red: #ff0000;
 
 	/* Font Colors */
-	--light-txt-color: #ececec;
-	--lighter-txt-color: white;
-	--dark-txt-color: rgb(68, 68, 68);
-	--darker-txt-color: black;
+	--txt-light: #ececec;
+	--txt-lighter: white;
+	--txt-dark: rgb(68, 68, 68);
+	--txt-darker: black;
 
 	/* Fonts */
-	--main-font: "Montserrat", sans-serif;
+	--font-main: "Montserrat", sans-serif;
 
-	--icon-size: 100px;
+	/* Icon Sizes */
+	--img-std: 100px;
+	--img-portrait: 240px;
+	--img-about: 120px;
+	--img-contact: 40px;
 }
 
 /* Standard Tags*/
@@ -25,52 +29,45 @@ html {
 }
 
 body {
-	background-color: var(--main-bg);
-	font-family: var(--main-font);
+	background-color: var(--bg-light);
+	font-family: var(--font-main);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	margin: 0;
 	font-size: 1rem;
-	color: var(--darker-txt-color);
+	text-align: center;
+	color: var(--txt-darker);
+}
+
+section {
+	/* Other CSS */
+	margin: auto;
+	max-width: 1000px;
+	padding: 2rem;
 }
 
 nav {
-	top: 0;
-	right: 0;
-	background-color: var(--dark-bg);
-	width: 100%;
+	text-align: right;
+	padding: 1rem 0;
 }
 
-nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-}
-
-nav li {
-	float: right;
-}
-
-nav li a {
-	display: block;
-	text-align: center;
+nav a {
 	padding: 14px 16px;
-	color: var(--light-txt-color);
 }
 
-nav li a:hover {
-	color: var(--lighter-txt-color);
+nav a:hover {
+	color: var(--txt-lighter);
 	font-weight: 600;
 }
 
-h2 {
-	font-size: 2rem;
+footer {
+	padding-bottom: 0.5rem;
+	font-size: 0.8rem;
 }
 
-h3 {
-	font-size: 1.5rem;
-	color: var(--dark-txt-color);
+footer p {
+	padding: 0;
+	margin: 0;
 }
 
 blockquote {
@@ -92,7 +89,7 @@ blockquote:before {
 	width: 3rem;
 	height: 2rem;
 	font: 6rem/6rem "PT Sans", sans-serif;
-	color: var(--dark-txt-color);
+	color: var(--txt-dark);
 }
 blockquote:after {
 	content: "\2013 \2003"attr(cite);
@@ -100,73 +97,80 @@ blockquote:after {
 	font-size: 0.875rem;
 	padding-top: 0.6rem;
 }
+h1 {
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+	color: var(--txt-dark);
+}
 
 a {
 	text-decoration: none;
 	color: inherit;
 }
 
-/* Shared Div Tags */
-.emergency {
-	background-color: red;
-	text-align: center;
-	color: var(--light-txt-color);
-	padding: 1rem;
+.bg-dark {
+	background-color: var(--bg-dark);
 }
 
-.emergency h2 {
-	margin: 0;
+.bg-light {
+	background-color: var(--bg-light);
 }
 
-.section {
-	/* Other CSS */
-	margin: auto;
-	max-width: 1000px;
-	padding: 2rem;
-	text-align: center;
-	position: relative;
+.bg-red {
+	background-color: var(--bg-red);
 }
 
-.container {
-	/* Flex CSS */
-	display: block;
-	justify-content: center;
-	align-items: center;
+.txt-light {
+	color: var(--txt-light);
+}
+
+.bold {
+	font-weight: 600;
 }
 
 .flex {
 	/* Flex CSS */
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	align-items: center;
 }
 
-.mt-2 {
-	margin-top: 2rem;
+.reverse {
+	/* Flex CSS */
+	flex-direction: row-reverse;
+}
+
+.full-width {
+	max-width: 100%;
+}
+
+/* Sizing */
+.top {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 52vh; /*Change back to 62 once emergency is done*/
 }
 
 .mt-4 {
 	margin-top: 4rem;
 }
 
-.dark {
-	background-color: var(--dark-bg);
+.m-0 {
+	margin: 0 auto;
 }
 
-/* Intro Section & Specific Tags */
-.top {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: var(--light-txt-color);
-	min-height: 52vh; /*Change back to 62 once emergency is done*/
-	max-width: 100%;
-}
-
-.title h1 {
-	font-size: 4rem;
-	position: relative;
-	z-index: 999;
+.p-0 {
+	padding: 0;
 }
 
 /* About Section & Specific Tags */
@@ -174,41 +178,41 @@ a {
 	width: 38%;
 }
 
-.icon img {
-	width: var(--icon-size);
-}
-
 .details {
 	width: 62%;
 	min-width: 360px;
 }
 
-/* Resume Section & Specific Tags */
-.resume img {
-	border: 1px solid var(--dark-txt-color);
+.img-std {
+	width: var(--img-std);
+}
+
+.img-portrait {
+	width: var(--img-portrait);
+}
+
+.img-about {
+	width: var(--img-about);
+}
+
+.img-border {
+	border: 1px solid var(--txt-dark);
 	border-radius: 10px;
 }
 
-/* Contact Section & Specific Tags */
 .contact {
 	justify-content: space-evenly;
+	flex-direction: column;
 }
 
-.contact img {
-	width: 40px;
-}
-
-.contact a {
+.img-contact {
+	width: var(--img-contact);
+	padding: 1rem;
 	transition: all 0.2s ease-in-out;
 }
 
-.contact a:hover {
+.img-contact:hover {
 	transform: scale(1.5);
-}
-
-.footer {
-	padding-bottom: 0.5rem;
-	font-size: 0.8rem;
 }
 
 /* Animate */
