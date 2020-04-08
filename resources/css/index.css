@@ -202,12 +202,10 @@ a {
 
 .contact {
 	justify-content: space-evenly;
-	flex-direction: column;
 }
 
 .img-contact {
 	width: var(--img-contact);
-	padding: 1rem;
 	transition: all 0.2s ease-in-out;
 }
 
