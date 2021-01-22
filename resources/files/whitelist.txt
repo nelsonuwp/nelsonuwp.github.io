@@ -1,1 +1,2 @@
 @@||hubspot.com^$document
+@@||hubapi.com^$document
